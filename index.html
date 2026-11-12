@@ -139,7 +139,7 @@ section{padding:60px 0}.prem{padding:28px}
 <h2>Professional Model Video Advertisement</h2>
 <p style="max-width:760px">আপনার Product, Shop বা Brand-এর জন্য আমরা তৈরি করি আকর্ষণীয় Model-Based Video Advertisement—যেখানে Model, Product Presentation, Cinematic Visual, Music, Motion Effects এবং Brand Story একসাথে ব্যবহার করা হয়।</p>
 <ul class="chips" id="video-feats"></ul>
-<div class="grid" id="video-cards"></div>
+
 </div></section>
 
 <section id="models"><div class="wrap rv">
@@ -249,7 +249,7 @@ $("#menu").onclick=()=>$("#menu").classList.remove("open");
 L("#problems",C.problems.map(t=>`<div class="card"><h3>${t}</h3></div>`));
 L("#why-video",C.whyVideo.map(t=>`<li>${t}</li>`));
 L("#video-feats",C.videoFeats.map(t=>`<li>${t}</li>`));
-L("#video-cards",C.videoCards.map(c=>`<div class="card"><div class="ph">▶ Video preview এখানে যোগ হবে</div><h3>${c[0]}</h3><p>${c[1]}</p></div>`));
+$("#video-cards")&&L("#video-cards",C.videoCards.map(c=>`<div class="card"><div class="ph">▶ Video preview এখানে যোগ হবে</div><h3>${c[0]}</h3><p>${c[1]}</p></div>`));
 L("#factors",C.factors.map(t=>`<li>${t}</li>`));
 L("#pkgs",C.packages.map(p=>`<div class="card"><h3>${p.n}</h3><div class="price">${p.p}</div><p>${p.d}</p><a class="btn" href="#order" data-pkg="${p.n}">Order Now</a></div>`));
 document.querySelectorAll("[data-pkg]").forEach(a=>a.addEventListener("click",()=>{$("#f-order [name=pkg]").value=a.dataset.pkg;est()}));
